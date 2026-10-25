@@ -23,6 +23,10 @@ services:
         fromDatabase:
           name: battery-shop-db
           property: connectionString
+      - key: DB_URL
+        fromDatabase:
+          name: battery-shop-db
+          property: connectionString
       - key: SESSION_DRIVER
         value: database
       - key: CACHE_STORE
