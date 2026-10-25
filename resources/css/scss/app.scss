@@ -1,0 +1,236 @@
+@use 'variables';
+@use 'mixins';
+@use 'buttons';
+@use 'forms';
+@use 'products';
+@use 'header';
+@use 'footer';
+
+// Global base styles
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: variables.$gray-900;
+    background-color: variables.$brand-white;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#app {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+// Focus visible styles for accessibility
+:focus-visible {
+    outline: 2px solid variables.$brand-red;
+    outline-offset: 2px;
+}
+
+// Skip link for accessibility
+.skip-link {
+    @include mixins.visually-hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: variables.$brand-red;
+    color: variables.$brand-white;
+    padding: variables.$spacing-sm variables.$spacing-md;
+    z-index: 9999;
+    
+    &:focus {
+        @include mixins.focus-ring;
+        clip: auto;
+        height: auto;
+        width: auto;
+        overflow: visible;
+    }
+}
+
+// Selection styles
+::selection {
+    background-color: variables.$brand-red;
+    color: variables.$brand-white;
+}
+
+// Scrollbar styles
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: variables.$gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+    background: variables.$gray-400;
+    border-radius: variables.$radius-full;
+    
+    &:hover {
+        background: variables.$gray-500;
+    }
+}
+
+// Utility classes
+.container {
+    @include mixins.container;
+}
+
+.sr-only {
+    @include mixins.visually-hidden;
+}
+
+.text-brand-red {
+    color: variables.$brand-red;
+}
+
+.text-brand-black {
+    color: variables.$brand-black;
+}
+
+.bg-brand-red {
+    background-color: variables.$brand-red;
+}
+
+.bg-brand-black {
+    background-color: variables.$brand-black;
+}
+
+.badge {
+    @include mixins.badge;
+}
+
+.badge-success {
+    @include mixins.badge-success;
+}
+
+.badge-warning {
+    @include mixins.badge-warning;
+}
+
+.badge-danger {
+    @include mixins.badge-danger;
+}
+
+.badge-info {
+    @include mixins.badge-info;
+}
+
+// Animations
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(-5%); }
+    50% { transform: translateY(0); }
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-bounce {
+    animation: bounce 1s infinite;
+}
+
+// Loading spinner
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid variables.$gray-200;
+    border-top-color: variables.$brand-red;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+.spinner-sm {
+    width: 20px;
+    height: 20px;
+    border-width: 2px;
+}
+
+// Page transitions
+.page-enter-active,
+.page-leave-active {
+    transition: opacity 0.3s ease;
+}
+
+.page-enter-from,
+.page-leave-to {
+    opacity: 0;
+}
+
+// Print styles
+@media print {
+    .header,
+    .footer,
+    .btn,
+    .search-form {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}

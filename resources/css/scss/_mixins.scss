@@ -1,0 +1,183 @@
+@use 'variables' as *;
+
+@mixin container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 $spacing-md;
+    
+    @media (min-width: 640px) {
+        padding: 0 $spacing-lg;
+    }
+    
+    @media (min-width: 1024px) {
+        padding: 0 $spacing-xl;
+    }
+}
+
+@mixin btn-base {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: $spacing-sm;
+    font-weight: 600;
+    border-radius: $radius-md;
+    transition: all $transition-normal;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+}
+
+@mixin btn-primary {
+    @include btn-base;
+    background-color: $brand-red;
+    color: $brand-white;
+    padding: $spacing-sm $spacing-lg;
+    
+    &:hover:not(:disabled) {
+        background-color: $brand-red-dark;
+        transform: translateY(-1px);
+        box-shadow: $shadow-md;
+    }
+    
+    &:active:not(:disabled) {
+        transform: translateY(0);
+    }
+}
+
+@mixin btn-secondary {
+    @include btn-base;
+    background-color: $brand-black;
+    color: $brand-white;
+    padding: $spacing-sm $spacing-lg;
+    
+    &:hover:not(:disabled) {
+        background-color: $gray-800;
+        transform: translateY(-1px);
+        box-shadow: $shadow-md;
+    }
+}
+
+@mixin btn-outline {
+    @include btn-base;
+    background-color: transparent;
+    color: $brand-red;
+    border: 2px solid $brand-red;
+    padding: calc(#{$spacing-sm} - 2px) calc(#{$spacing-lg} - 2px);
+    
+    &:hover:not(:disabled) {
+        background-color: $brand-red;
+        color: $brand-white;
+    }
+}
+
+@mixin card-base {
+    background-color: $brand-white;
+    border-radius: $radius-lg;
+    box-shadow: $shadow-sm;
+    border: 1px solid $gray-200;
+    transition: all $transition-normal;
+    
+    &:hover {
+        box-shadow: $shadow-md;
+        border-color: $gray-300;
+    }
+}
+
+@mixin input-base {
+    width: 100%;
+    padding: $spacing-sm $spacing-md;
+    font-size: 0.875rem;
+    border: 1px solid $gray-300;
+    border-radius: $radius-md;
+    background-color: $brand-white;
+    color: $gray-900;
+    transition: all $transition-fast;
+    
+    &::placeholder {
+        color: $gray-400;
+    }
+    
+    &:focus {
+        outline: none;
+        border-color: $brand-red;
+        box-shadow: 0 0 0 3px rgba($brand-red, 0.1);
+    }
+    
+    &:disabled {
+        background-color: $gray-100;
+        cursor: not-allowed;
+    }
+}
+
+@mixin badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.125rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: $radius-full;
+}
+
+@mixin badge-success {
+    @include badge;
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+@mixin badge-warning {
+    @include badge;
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+@mixin badge-danger {
+    @include badge;
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+@mixin badge-info {
+    @include badge;
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+@mixin focus-ring {
+    &:focus-visible {
+        outline: none;
+        ring: 2px;
+        ring-color: $brand-red;
+        ring-offset: 2px;
+    }
+}
+
+@mixin visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@mixin truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin line-clamp($lines) {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

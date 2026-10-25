@@ -1,0 +1,2052 @@
+<!DOCTYPE html>
+<html lang="mk" title="Дома" description="Премиум батерии за секое возило. Автомобил, камион, морски, кампер, мотоцикл и многу повеќе. Безплатна достава на нарачки над $100+, експертска поддршка, гаранција лидер во индустријата.">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="xQpyxvZK5XG17P94MQujeMunHq9x7GVeQ70exGl6">
+    
+    <title>Дома - Laravel</title>
+    <meta name="description" content="Премиум батерии за секое возило. Автомобил, камион, морски, кампер, мотоцикл и многу повеќе. Безплатна достава на нарачки над $100+, експертска поддршка, гаранција лидер во индустријата.">
+    
+    <link rel="preload" as="style" href="http://127.0.0.1:8000/build/assets/app-C8_wfqEu.css" /><link rel="modulepreload" as="script" href="http://127.0.0.1:8000/build/assets/app-DMsN-rLE.js" /><link rel="modulepreload" as="script" href="http://127.0.0.1:8000/build/assets/cart-DMf6uLxh.js" /><link rel="stylesheet" href="http://127.0.0.1:8000/build/assets/app-C8_wfqEu.css" data-navigate-track="reload" /><script type="module" src="http://127.0.0.1:8000/build/assets/app-DMsN-rLE.js" data-navigate-track="reload"></script><script type="module" src="http://127.0.0.1:8000/build/assets/cart-DMf6uLxh.js" data-navigate-track="reload"></script>    
+    </head>
+<body class="bg-gray-50">
+    <div class="flex flex-col min-h-screen">
+        <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="http://127.0.0.1:8000" class="flex items-center">
+                                            <svg class="h-8 w-8 text-amber-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.4 3.6L12 6l-2.4-2.4C8.4 2.4 7.2 3.6 7.2 4.8v14.4c0 1.2 1.2 2.4 2.4 2.4h9.6c1.2 0 2.4-1.2 2.4-2.4V4.8c0-1.2-1.2-2.4-2.4-2.4zM10 5.2h4v1.6h-4V5.2zm0 3.2h4v8h-4v-8zm4.8 0h4v8h-4v-8z"/>
+                        </svg>
+                                        <span class="ml-2 text-xl font-bold text-gray-900">Laravel</span>
+                </a>
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="hidden md:flex items-center space-x-8" aria-label="Main navigation">
+                <nav class="flex items-center space-x-4" x-data="menuNavigation()">
+        <ul class="flex flex-col sm:flex-row items-center gap-1 sm:gap-4" role="menubar">
+                            <li class="relative" role="none" >
+            
+        <a 
+            href="/battery-finder"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                            <i class="fas fa-search text-lg"></i>
+                        <span>Battery Finder</span>
+        </a>
+    </li>                            <li class="relative" role="none" >
+            
+        <a 
+            href="/"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                            <i class="fas fa-home text-lg"></i>
+                        <span>Home</span>
+        </a>
+    </li>                            <li class="relative" role="none"  x-data >
+            
+        <div class="relative">
+            <button 
+                type="button"
+                role="menuitem"
+                aria-haspopup="true"
+                aria-expanded="false"
+                aria-controls="dropdown-2-0"
+                class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors"
+                @click="$dispatch('toggle-dropdown', { index: 2, id: 'dropdown-2-0' })"
+                @keydown="$dispatch('keydown-dropdown', { event: $event, index: 2 })"
+            >
+                                    <i class="fas fa-store text-lg"></i>
+                                <span>Shop</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+            </button>
+
+            
+            <div 
+                id="dropdown-2-0"
+                role="menu"
+                class="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 py-2 opacity-0 invisible transform translate-y-1 transition-all duration-200 z-50"
+                x-show="$store.menu.openDropdowns.includes(2)"
+                x-transition:enter="transition ease-out duration-200"
+                x-transition:enter-start="opacity-0 invisible transform translate-y-1"
+                x-transition:enter-end="opacity-100 visible transform translate-y-0"
+                x-transition:leave="transition ease-in duration-150"
+                x-transition:leave-start="opacity-100 visible transform translate-y-0"
+                x-transition:leave-end="opacity-0 invisible transform translate-y-1"
+                @click.outside="$dispatch('close-dropdown', { index: 2 })"
+            >
+                <ul class="space-y-1" role="none">
+                                            <li class="relative" role="none" >
+            
+        <a 
+            href="/products"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                        <span>All Batteries</span>
+        </a>
+    </li>                                            <li class="relative" role="none" >
+            
+        <a 
+            href="/categories"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                            <i class="fas fa-list text-lg"></i>
+                        <span>Categories</span>
+        </a>
+    </li>                                            <li class="relative" role="none" >
+            
+        <a 
+            href="/brands"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                            <i class="fas fa-tags text-lg"></i>
+                        <span>Brands</span>
+        </a>
+    </li>                                            <li class="relative" role="none" >
+            
+        <a 
+            href="/battery-finder"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                            <i class="fas fa-car text-lg"></i>
+                        <span>By Vehicle</span>
+        </a>
+    </li>                                    </ul>
+            </div>
+        </div>
+    </li>                            <li class="relative" role="none"  x-data >
+            
+        <div class="relative">
+            <button 
+                type="button"
+                role="menuitem"
+                aria-haspopup="true"
+                aria-expanded="false"
+                aria-controls="dropdown-12-0"
+                class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors"
+                @click="$dispatch('toggle-dropdown', { index: 3, id: 'dropdown-12-0' })"
+                @keydown="$dispatch('keydown-dropdown', { event: $event, index: 3 })"
+            >
+                                    <i class="fas fa-percent text-lg"></i>
+                                <span>Deals</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+            </button>
+
+            
+            <div 
+                id="dropdown-12-0"
+                role="menu"
+                class="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 py-2 opacity-0 invisible transform translate-y-1 transition-all duration-200 z-50"
+                x-show="$store.menu.openDropdowns.includes(3)"
+                x-transition:enter="transition ease-out duration-200"
+                x-transition:enter-start="opacity-0 invisible transform translate-y-1"
+                x-transition:enter-end="opacity-100 visible transform translate-y-0"
+                x-transition:leave="transition ease-in duration-150"
+                x-transition:leave-start="opacity-100 visible transform translate-y-0"
+                x-transition:leave-end="opacity-0 invisible transform translate-y-1"
+                @click.outside="$dispatch('close-dropdown', { index: 3 })"
+            >
+                <ul class="space-y-1" role="none">
+                                            <li class="relative" role="none" >
+            
+        <a 
+            href="/deals"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                        <span>Special Offers</span>
+        </a>
+    </li>                                            <li class="relative" role="none" >
+            
+        <a 
+            href="/clearance"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                        <span>Clearance</span>
+        </a>
+    </li>                                            <li class="relative" role="none" >
+            
+        <a 
+            href="/bulk-discounts"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                        <span>Bulk Discounts</span>
+        </a>
+    </li>                                    </ul>
+            </div>
+        </div>
+    </li>                            <li class="relative" role="none"  x-data >
+            
+        <div class="relative">
+            <button 
+                type="button"
+                role="menuitem"
+                aria-haspopup="true"
+                aria-expanded="false"
+                aria-controls="dropdown-16-0"
+                class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors"
+                @click="$dispatch('toggle-dropdown', { index: 4, id: 'dropdown-16-0' })"
+                @keydown="$dispatch('keydown-dropdown', { event: $event, index: 4 })"
+            >
+                                    <i class="fas fa-headset text-lg"></i>
+                                <span>Support</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+            </button>
+
+            
+            <div 
+                id="dropdown-16-0"
+                role="menu"
+                class="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 py-2 opacity-0 invisible transform translate-y-1 transition-all duration-200 z-50"
+                x-show="$store.menu.openDropdowns.includes(4)"
+                x-transition:enter="transition ease-out duration-200"
+                x-transition:enter-start="opacity-0 invisible transform translate-y-1"
+                x-transition:enter-end="opacity-100 visible transform translate-y-0"
+                x-transition:leave="transition ease-in duration-150"
+                x-transition:leave-start="opacity-100 visible transform translate-y-0"
+                x-transition:leave-end="opacity-0 invisible transform translate-y-1"
+                @click.outside="$dispatch('close-dropdown', { index: 4 })"
+            >
+                <ul class="space-y-1" role="none">
+                                            <li class="relative" role="none" >
+            
+        <a 
+            href="/contact"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                            <i class="fas fa-envelope text-lg"></i>
+                        <span>Contact Us</span>
+        </a>
+    </li>                                            <li class="relative" role="none" >
+            
+        <a 
+            href="/shipping"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                            <i class="fas fa-truck text-lg"></i>
+                        <span>Shipping Info</span>
+        </a>
+    </li>                                            <li class="relative" role="none" >
+            
+        <a 
+            href="/returns"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                            <i class="fas fa-undo text-lg"></i>
+                        <span>Returns</span>
+        </a>
+    </li>                                            <li class="relative" role="none" >
+            
+        <a 
+            href="/warranty"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                            <i class="fas fa-shield-alt text-lg"></i>
+                        <span>Warranty</span>
+        </a>
+    </li>                                            <li class="relative" role="none" >
+            
+        <a 
+            href="/installation-guide"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                            <i class="fas fa-tools text-lg"></i>
+                        <span>Installation Guide</span>
+        </a>
+    </li>                                            <li class="relative" role="none" >
+            
+        <a 
+            href="/faq"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                            <i class="fas fa-question-circle text-lg"></i>
+                        <span>FAQ</span>
+        </a>
+    </li>                                    </ul>
+            </div>
+        </div>
+    </li>                            <li class="relative" role="none"  x-data >
+            
+        <div class="relative">
+            <button 
+                type="button"
+                role="menuitem"
+                aria-haspopup="true"
+                aria-expanded="false"
+                aria-controls="dropdown-23-0"
+                class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors"
+                @click="$dispatch('toggle-dropdown', { index: 5, id: 'dropdown-23-0' })"
+                @keydown="$dispatch('keydown-dropdown', { event: $event, index: 5 })"
+            >
+                                <span>About Us</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+            </button>
+
+            
+            <div 
+                id="dropdown-23-0"
+                role="menu"
+                class="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 py-2 opacity-0 invisible transform translate-y-1 transition-all duration-200 z-50"
+                x-show="$store.menu.openDropdowns.includes(5)"
+                x-transition:enter="transition ease-out duration-200"
+                x-transition:enter-start="opacity-0 invisible transform translate-y-1"
+                x-transition:enter-end="opacity-100 visible transform translate-y-0"
+                x-transition:leave="transition ease-in duration-150"
+                x-transition:leave-start="opacity-100 visible transform translate-y-0"
+                x-transition:leave-end="opacity-0 invisible transform translate-y-1"
+                @click.outside="$dispatch('close-dropdown', { index: 5 })"
+            >
+                <ul class="space-y-1" role="none">
+                                            <li class="relative" role="none" >
+            
+        <a 
+            href="/about"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                        <span>Our Story</span>
+        </a>
+    </li>                                            <li class="relative" role="none" >
+            
+        <a 
+            href="/careers"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                        <span>Careers</span>
+        </a>
+    </li>                                            <li class="relative" role="none" >
+            
+        <a 
+            href="/blog"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                        <span>Blog</span>
+        </a>
+    </li>                                            <li class="relative" role="none" >
+            
+        <a 
+            href="/press"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                        <span>Press</span>
+        </a>
+    </li>                                    </ul>
+            </div>
+        </div>
+    </li>                    </ul>
+    </nav>
+
+            </nav>
+            
+            <!-- Right side: Search, Cart, Account -->
+            <div class="flex items-center space-x-4">
+                <!-- Language Switcher -->
+                <div class="relative" id="language-menu">
+                    <button type="button"
+                            class="flex items-center gap-1 p-2 text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition"
+                            onclick="toggleLanguageMenu()"
+                            aria-expanded="false"
+                            aria-haspopup="true">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 12.586V7a1 1 0 10-2 0v4.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 12.586V14z"/>
+                        </svg>
+                        <span class="hidden sm:block text-sm font-medium uppercase">
+                            MK
+                        </span>
+                        <svg class="w-4 h-4 sm:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+
+                    <div class="absolute right-0 mt-2 w-32 bg-white rounded-lg shadow-lg border border-gray-200 py-1 hidden"
+                         id="language-dropdown"
+                         role="menu"
+                         aria-orientation="vertical">
+                        <a href="http://127.0.0.1:8000/lang/mk"
+                           class="block px-4 py-2 text-gray-700 hover:text-amber-600 hover:bg-gray-50 transition font-semibold"
+                           role="menuitem">
+                            Македонски
+                        </a>
+                        <a href="http://127.0.0.1:8000/lang/en"
+                           class="block px-4 py-2 text-gray-700 hover:text-amber-600 hover:bg-gray-50 transition "
+                           role="menuitem">
+                            English
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Search -->
+                <form action="http://127.0.0.1:8000/search" method="GET" class="hidden sm:block relative">
+                    <input type="text" name="q" placeholder="Пребарај батерии..." 
+                           class="w-64 pl-10 pr-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
+                           value="">
+                    <svg class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                </form>
+                
+                <!-- Cart -->
+                <a href="http://127.0.0.1:8000/cart" class="relative p-2 text-gray-700 hover:text-amber-600 transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                    </svg>
+                    <span class="absolute -top-1 -right-1 bg-amber-600 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center hidden" data-cart-count>0</span>
+                </a>
+                
+                <!-- Account -->
+                                    <a href="http://127.0.0.1:8000/login" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 transition">Најава</a>
+                    <a href="http://127.0.0.1:8000/register" class="px-4 py-2 text-sm font-medium text-white bg-amber-600 rounded-lg hover:bg-amber-700 transition">Регистрација</a>
+                            </div>
+        </div>
+        
+        <!-- Mobile menu would go here -->
+    </div>
+</header>        
+        <main class="flex-grow">
+                        
+                        
+            <section class="relative">
+                            <div class="hero-slider relative w-full overflow-hidden" data-autoplay="true" data-interval="5000">
+                    <div class="slider-track flex transition-transform duration-700 ease-out">
+                                                    <div class="slide min-w-full relative" style="background-color: #1a1a2e">
+                                                                <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
+                                    <div class="max-w-3xl">
+                                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                                            Power Your Journey with Confidence
+                                        </h1>
+                                                                                    <p class="text-lg sm:text-xl text-gray-300 mb-8 leading-relaxed">
+                                                Premium batteries for every vehicle. Fast shipping, expert advice, and the best warranty in the industry.
+                                            </p>
+                                                                                                                            <div class="flex flex-wrap gap-4">
+                                                <a href="/products" class="px-8 py-3 bg-amber-500 text-white font-semibold rounded-lg hover:bg-amber-600 transition">
+                                                    Shop Batteries
+                                                </a>
+                                            </div>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <div class="slide min-w-full relative" style="background-color: #2d1b1b">
+                                                                <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
+                                    <div class="max-w-3xl">
+                                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                                            Find Your Perfect Battery
+                                        </h1>
+                                                                                    <p class="text-lg sm:text-xl text-gray-300 mb-8 leading-relaxed">
+                                                Use our smart battery finder to match the exact battery for your vehicle by make, model, and year.
+                                            </p>
+                                                                                                                            <div class="flex flex-wrap gap-4">
+                                                <a href="/battery-finder" class="px-8 py-3 bg-amber-500 text-white font-semibold rounded-lg hover:bg-amber-600 transition">
+                                                    Find My Battery
+                                                </a>
+                                            </div>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <div class="slide min-w-full relative" style="background-color: #1b2d1b">
+                                                                <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
+                                    <div class="max-w-3xl">
+                                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                                            Top Brands, Best Prices
+                                        </h1>
+                                                                                    <p class="text-lg sm:text-xl text-gray-300 mb-8 leading-relaxed">
+                                                Bosch, Varta, Exide, Banner, and more. Premium quality at competitive prices.
+                                            </p>
+                                                                                                                            <div class="flex flex-wrap gap-4">
+                                                <a href="/brands" class="px-8 py-3 bg-amber-500 text-white font-semibold rounded-lg hover:bg-amber-600 transition">
+                                                    View All Brands
+                                                </a>
+                                            </div>
+                                                                            </div>
+                                </div>
+                            </div>
+                                            </div>
+
+                    
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const slider = document.querySelector('.hero-slider');
+                            if (!slider) return;
+
+                            const track = slider.querySelector('.slider-track');
+                            const slides = slider.querySelectorAll('.slide');
+                            const prevBtn = slider.querySelector('.slider-prev');
+                            const nextBtn = slider.querySelector('.slider-next');
+                            const dots = slider.querySelectorAll('.slider-dot');
+                            
+                            let currentIndex = 0;
+                            const slideCount = slides.length;
+                            let autoplayInterval;
+
+                            // Hide navigation elements as requested
+                            if (prevBtn) prevBtn.style.display = 'none';
+                            if (nextBtn) nextBtn.style.display = 'none';
+                            const dotsContainer = slider.querySelector('.slider-dots');
+                            if (dotsContainer) dotsContainer.style.display = 'none';
+
+                            function goToSlide(index) {
+                                if (index < 0) index = slideCount - 1;
+                                if (index >= slideCount) index = 0;
+                                
+                                currentIndex = index;
+                                track.style.transform = `translateX(-${index * 100}%)`;
+                                
+                                // Update dots
+                                dots.forEach((dot, i) => {
+                                    dot.classList.toggle('bg-white', i === index);
+                                    dot.classList.toggle('bg-white/50', i !== index);
+                                });
+                            }
+
+                            function nextSlide() {
+                                goToSlide(currentIndex + 1);
+                            }
+
+                            function prevSlide() {
+                                goToSlide(currentIndex - 1);
+                            }
+
+                            // Autoplay
+                            function startAutoplay() {
+                                autoplayInterval = setInterval(nextSlide, 5000);
+                            }
+
+                            function stopAutoplay() {
+                                clearInterval(autoplayInterval);
+                            }
+
+                            // Start autoplay
+                            startAutoplay();
+
+                            // Pause on hover
+                            slider.addEventListener('mouseenter', stopAutoplay);
+                            slider.addEventListener('mouseleave', startAutoplay);
+
+                            // Dot navigation (still functional even if hidden)
+                            dots.forEach((dot, index) => {
+                                dot.addEventListener('click', () => {
+                                    goToSlide(index);
+                                    stopAutoplay();
+                                    startAutoplay();
+                                });
+                            });
+
+                            // Keyboard navigation
+                            document.addEventListener('keydown', (e) => {
+                                if (e.key === 'ArrowLeft') {
+                                    prevSlide();
+                                    stopAutoplay();
+                                    startAutoplay();
+                                } else if (e.key === 'ArrowRight') {
+                                    nextSlide();
+                                    stopAutoplay();
+                                    startAutoplay();
+                                }
+                            });
+
+                            // Touch swipe support
+                            let touchStartX = 0;
+                            let touchEndX = 0;
+
+                            slider.addEventListener('touchstart', (e) => {
+                                touchStartX = e.changedTouches[0].screenX;
+                            }, { passive: true });
+
+                            slider.addEventListener('touchend', (e) => {
+                                touchEndX = e.changedTouches[0].screenX;
+                                handleSwipe();
+                            }, { passive: true });
+
+                            function handleSwipe() {
+                                const swipeThreshold = 50;
+                                const diff = touchStartX - touchEndX;
+                                
+                                if (Math.abs(diff) > swipeThreshold) {
+                                    if (diff > 0) {
+                                        nextSlide();
+                                    } else {
+                                        prevSlide();
+                                    }
+                                    stopAutoplay();
+                                    startAutoplay();
+                                }
+                            }
+                        });
+                    </script>
+                    </section>
+    
+    
+        <section class="py-12 bg-white border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                                    
+                    <div>
+                        <svg class="w-10 h-10 text-amber-500 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-2h14a2 2 0 110 2M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/>
+                        </svg>
+                        <p class="font-semibold text-gray-900">Бесплатна Достава</p>
+                        <p class="text-sm text-gray-500">На нарачки над $100</p>
+                    </div>
+                    <div>
+                        <svg class="w-10 h-10 text-amber-500 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                        <p class="font-semibold text-gray-900">Безбедно Плаќање</p>
+                        <p class="text-sm text-gray-500">100% заштитена каса</p>
+                    </div>
+                    <div>
+                        <svg class="w-10 h-10 text-amber-500 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                        <p class="font-semibold text-gray-900">Лесни Враќања</p>
+                        <p class="text-sm text-gray-500">30-дневен период за враќање</p>
+                    </div>
+                    <div>
+                        <svg class="w-10 h-10 text-amber-500 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/>
+                        </svg>
+                        <p class="font-semibold text-gray-900">Експертска Поддршка</p>
+                        <p class="text-sm text-gray-500">Пон-Пет 8-18 ЕСТ</p>
+                    </div>
+                            </div>
+        </div>
+    </section>
+    
+    
+        <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between mb-10">
+                <h2 class="text-3xl font-bold text-gray-900">Shop by Category</h2>
+                <a href="http://127.0.0.1:8000/categories" class="text-amber-600 hover:text-amber-700 font-medium">Види Сите →</a>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
+                                    <a href="http://127.0.0.1:8000/categories/car-batteries" class="group relative aspect-square rounded-xl overflow-hidden bg-gray-100">
+                                                    <img src="http://127.0.0.1:8000/storage/categories/car-batteries.jpg" alt="Car Batteries" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h3 class="text-white font-semibold text-lg">Car Batteries</h3>
+                            <p class="text-white/80 text-sm">4 Подкатегории</p>
+                        </div>
+                    </a>
+                                    <a href="http://127.0.0.1:8000/categories/truck-commercial" class="group relative aspect-square rounded-xl overflow-hidden bg-gray-100">
+                                                    <img src="http://127.0.0.1:8000/storage/categories/truck-commercial.jpg" alt="Truck &amp; Commercial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h3 class="text-white font-semibold text-lg">Truck &amp; Commercial</h3>
+                            <p class="text-white/80 text-sm">3 Подкатегории</p>
+                        </div>
+                    </a>
+                                    <a href="http://127.0.0.1:8000/categories/motorcycle-powersports" class="group relative aspect-square rounded-xl overflow-hidden bg-gray-100">
+                                                    <img src="http://127.0.0.1:8000/storage/categories/motorcycle.jpg" alt="Motorcycle &amp; Powersports" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h3 class="text-white font-semibold text-lg">Motorcycle &amp; Powersports</h3>
+                            <p class="text-white/80 text-sm">0 Подкатегории</p>
+                        </div>
+                    </a>
+                                    <a href="http://127.0.0.1:8000/categories/marine-rv" class="group relative aspect-square rounded-xl overflow-hidden bg-gray-100">
+                                                    <img src="http://127.0.0.1:8000/storage/categories/marine-rv.jpg" alt="Marine &amp; RV" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h3 class="text-white font-semibold text-lg">Marine &amp; RV</h3>
+                            <p class="text-white/80 text-sm">4 Подкатегории</p>
+                        </div>
+                    </a>
+                                    <a href="http://127.0.0.1:8000/categories/lawn-garden" class="group relative aspect-square rounded-xl overflow-hidden bg-gray-100">
+                                                    <img src="http://127.0.0.1:8000/storage/categories/lawn-garden.jpg" alt="Lawn &amp; Garden" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h3 class="text-white font-semibold text-lg">Lawn &amp; Garden</h3>
+                            <p class="text-white/80 text-sm">0 Подкатегории</p>
+                        </div>
+                    </a>
+                                    <a href="http://127.0.0.1:8000/categories/golf-cart-ev" class="group relative aspect-square rounded-xl overflow-hidden bg-gray-100">
+                                                    <img src="http://127.0.0.1:8000/storage/categories/golf-cart.jpg" alt="Golf Cart &amp; EV" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h3 class="text-white font-semibold text-lg">Golf Cart &amp; EV</h3>
+                            <p class="text-white/80 text-sm">0 Подкатегории</p>
+                        </div>
+                    </a>
+                            </div>
+        </div>
+    </section>
+    
+    
+        <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between mb-10">
+                <h2 class="text-3xl font-bold text-gray-900">Featured Products</h2>
+                <a href="http://127.0.0.1:8000/products" class="text-amber-600 hover:text-amber-700 font-medium">Види Сите →</a>
+            </div>
+            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                                            <div class="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl hover:border-amber-200 transition-all duration-300">
+    <!-- Product Image -->
+    <div class="relative aspect-square bg-gray-50 overflow-hidden">
+                    <img src="http://127.0.0.1:8000/storage/products/odyssey-31-pc2150.jpg" 
+                 alt="Odyssey 31-PC2150S" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                
+        <!-- Badges -->
+        <div class="absolute top-2 left-2 flex flex-col gap-1">
+                            <span class="bg-amber-500 text-white text-xs font-medium px-2 py-1 rounded">Featured</span>
+                                        <span class="bg-red-500 text-white text-xs font-medium px-2 py-1 rounded">Sale</span>
+                                        <span class="bg-orange-500 text-white text-xs font-medium px-2 py-1 rounded">Low Stock</span>
+                    </div>
+        
+        <!-- Quick Add to Cart -->
+        <div class="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <button data-add-to-cart="12" 
+                    class="w-full bg-amber-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-amber-700 transition">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+    
+    <!-- Product Info -->
+    <div class="p-4">
+        <div class="flex items-start justify-between mb-2">
+            <div>
+                                    <p class="text-xs text-gray-500 uppercase tracking-wide">Odyssey</p>
+                                <h3 class="font-semibold text-gray-900 line-clamp-1 mt-1">
+                    <a href="http://127.0.0.1:8000/products/odyssey-31-pc2150s" class="hover:text-amber-600 transition">
+                        Odyssey 31-PC2150S
+                    </a>
+                </h3>
+            </div>
+                            <span class="text-xs text-orange-500 font-medium">Only 5 left</span>
+                    </div>
+        
+        <!-- Key Specs -->
+        <div class="flex flex-wrap gap-2 mb-3 text-xs text-gray-500">
+                                                                                                        </div>
+        
+        <!-- Price & Action -->
+        <div class="flex items-center justify-between">
+            <div>
+                                    <span class="text-2xl font-bold text-amber-600">$419.99</span>
+                    <span class="text-gray-400 line-through text-sm ml-2">$449.99</span>
+                            </div>
+            <a href="http://127.0.0.1:8000/products/odyssey-31-pc2150s" class="text-sm text-amber-600 hover:text-amber-700 font-medium">
+                View Details →
+            </a>
+        </div>
+    </div>
+</div>                                            <div class="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl hover:border-amber-200 transition-all duration-300">
+    <!-- Product Image -->
+    <div class="relative aspect-square bg-gray-50 overflow-hidden">
+                    <img src="http://127.0.0.1:8000/storage/products/diehard-platinum-agm.jpg" 
+                 alt="DieHard Platinum AGM" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                
+        <!-- Badges -->
+        <div class="absolute top-2 left-2 flex flex-col gap-1">
+                            <span class="bg-amber-500 text-white text-xs font-medium px-2 py-1 rounded">Featured</span>
+                                        <span class="bg-red-500 text-white text-xs font-medium px-2 py-1 rounded">Sale</span>
+                                </div>
+        
+        <!-- Quick Add to Cart -->
+        <div class="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <button data-add-to-cart="16" 
+                    class="w-full bg-amber-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-amber-700 transition">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+    
+    <!-- Product Info -->
+    <div class="p-4">
+        <div class="flex items-start justify-between mb-2">
+            <div>
+                                    <p class="text-xs text-gray-500 uppercase tracking-wide">DieHard</p>
+                                <h3 class="font-semibold text-gray-900 line-clamp-1 mt-1">
+                    <a href="http://127.0.0.1:8000/products/diehard-platinum-agm" class="hover:text-amber-600 transition">
+                        DieHard Platinum AGM
+                    </a>
+                </h3>
+            </div>
+                    </div>
+        
+        <!-- Key Specs -->
+        <div class="flex flex-wrap gap-2 mb-3 text-xs text-gray-500">
+                                                                                                        </div>
+        
+        <!-- Price & Action -->
+        <div class="flex items-center justify-between">
+            <div>
+                                    <span class="text-2xl font-bold text-amber-600">$239.99</span>
+                    <span class="text-gray-400 line-through text-sm ml-2">$259.99</span>
+                            </div>
+            <a href="http://127.0.0.1:8000/products/diehard-platinum-agm" class="text-sm text-amber-600 hover:text-amber-700 font-medium">
+                View Details →
+            </a>
+        </div>
+    </div>
+</div>                                            <div class="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl hover:border-amber-200 transition-all duration-300">
+    <!-- Product Image -->
+    <div class="relative aspect-square bg-gray-50 overflow-hidden">
+                    <img src="http://127.0.0.1:8000/storage/products/bosch-lifepo4-marine.jpg" 
+                 alt="Bosch LiFePO4 100Ah Marine" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                
+        <!-- Badges -->
+        <div class="absolute top-2 left-2 flex flex-col gap-1">
+                            <span class="bg-amber-500 text-white text-xs font-medium px-2 py-1 rounded">Featured</span>
+                                        <span class="bg-red-500 text-white text-xs font-medium px-2 py-1 rounded">Sale</span>
+                                        <span class="bg-orange-500 text-white text-xs font-medium px-2 py-1 rounded">Low Stock</span>
+                    </div>
+        
+        <!-- Quick Add to Cart -->
+        <div class="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <button data-add-to-cart="21" 
+                    class="w-full bg-amber-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-amber-700 transition">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+    
+    <!-- Product Info -->
+    <div class="p-4">
+        <div class="flex items-start justify-between mb-2">
+            <div>
+                                    <p class="text-xs text-gray-500 uppercase tracking-wide">Bosch</p>
+                                <h3 class="font-semibold text-gray-900 line-clamp-1 mt-1">
+                    <a href="http://127.0.0.1:8000/products/bosch-lifepo4-100ah-marine" class="hover:text-amber-600 transition">
+                        Bosch LiFePO4 100Ah Marine
+                    </a>
+                </h3>
+            </div>
+                            <span class="text-xs text-orange-500 font-medium">Only 4 left</span>
+                    </div>
+        
+        <!-- Key Specs -->
+        <div class="flex flex-wrap gap-2 mb-3 text-xs text-gray-500">
+                                                                                                        </div>
+        
+        <!-- Price & Action -->
+        <div class="flex items-center justify-between">
+            <div>
+                                    <span class="text-2xl font-bold text-amber-600">$849.99</span>
+                    <span class="text-gray-400 line-through text-sm ml-2">$899.99</span>
+                            </div>
+            <a href="http://127.0.0.1:8000/products/bosch-lifepo4-100ah-marine" class="text-sm text-amber-600 hover:text-amber-700 font-medium">
+                View Details →
+            </a>
+        </div>
+    </div>
+</div>                                            <div class="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl hover:border-amber-200 transition-all duration-300">
+    <!-- Product Image -->
+    <div class="relative aspect-square bg-gray-50 overflow-hidden">
+                    <img src="http://127.0.0.1:8000/storage/products/banner-running-bull-agm.jpg" 
+                 alt="Banner Running Bull AGM" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                
+        <!-- Badges -->
+        <div class="absolute top-2 left-2 flex flex-col gap-1">
+                            <span class="bg-amber-500 text-white text-xs font-medium px-2 py-1 rounded">Featured</span>
+                                        <span class="bg-red-500 text-white text-xs font-medium px-2 py-1 rounded">Sale</span>
+                                </div>
+        
+        <!-- Quick Add to Cart -->
+        <div class="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <button data-add-to-cart="23" 
+                    class="w-full bg-amber-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-amber-700 transition">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+    
+    <!-- Product Info -->
+    <div class="p-4">
+        <div class="flex items-start justify-between mb-2">
+            <div>
+                                    <p class="text-xs text-gray-500 uppercase tracking-wide">Banner</p>
+                                <h3 class="font-semibold text-gray-900 line-clamp-1 mt-1">
+                    <a href="http://127.0.0.1:8000/products/banner-running-bull-agm" class="hover:text-amber-600 transition">
+                        Banner Running Bull AGM
+                    </a>
+                </h3>
+            </div>
+                    </div>
+        
+        <!-- Key Specs -->
+        <div class="flex flex-wrap gap-2 mb-3 text-xs text-gray-500">
+                                                                                                        </div>
+        
+        <!-- Price & Action -->
+        <div class="flex items-center justify-between">
+            <div>
+                                    <span class="text-2xl font-bold text-amber-600">$219.99</span>
+                    <span class="text-gray-400 line-through text-sm ml-2">$239.99</span>
+                            </div>
+            <a href="http://127.0.0.1:8000/products/banner-running-bull-agm" class="text-sm text-amber-600 hover:text-amber-700 font-medium">
+                View Details →
+            </a>
+        </div>
+    </div>
+</div>                                            <div class="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl hover:border-amber-200 transition-all duration-300">
+    <!-- Product Image -->
+    <div class="relative aspect-square bg-gray-50 overflow-hidden">
+                    <img src="http://127.0.0.1:8000/storage/products/moll-agm.jpg" 
+                 alt="Moll AGM Start-Stop" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                
+        <!-- Badges -->
+        <div class="absolute top-2 left-2 flex flex-col gap-1">
+                            <span class="bg-amber-500 text-white text-xs font-medium px-2 py-1 rounded">Featured</span>
+                                        <span class="bg-red-500 text-white text-xs font-medium px-2 py-1 rounded">Sale</span>
+                                </div>
+        
+        <!-- Quick Add to Cart -->
+        <div class="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <button data-add-to-cart="26" 
+                    class="w-full bg-amber-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-amber-700 transition">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+    
+    <!-- Product Info -->
+    <div class="p-4">
+        <div class="flex items-start justify-between mb-2">
+            <div>
+                                    <p class="text-xs text-gray-500 uppercase tracking-wide">Moll</p>
+                                <h3 class="font-semibold text-gray-900 line-clamp-1 mt-1">
+                    <a href="http://127.0.0.1:8000/products/moll-agm-start-stop" class="hover:text-amber-600 transition">
+                        Moll AGM Start-Stop
+                    </a>
+                </h3>
+            </div>
+                    </div>
+        
+        <!-- Key Specs -->
+        <div class="flex flex-wrap gap-2 mb-3 text-xs text-gray-500">
+                                                                                                        </div>
+        
+        <!-- Price & Action -->
+        <div class="flex items-center justify-between">
+            <div>
+                                    <span class="text-2xl font-bold text-amber-600">$229.99</span>
+                    <span class="text-gray-400 line-through text-sm ml-2">$249.99</span>
+                            </div>
+            <a href="http://127.0.0.1:8000/products/moll-agm-start-stop" class="text-sm text-amber-600 hover:text-amber-700 font-medium">
+                View Details →
+            </a>
+        </div>
+    </div>
+</div>                                            <div class="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl hover:border-amber-200 transition-all duration-300">
+    <!-- Product Image -->
+    <div class="relative aspect-square bg-gray-50 overflow-hidden">
+                    <img src="http://127.0.0.1:8000/storage/products/tudor-agm.jpg" 
+                 alt="Tudor AGM Professional" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                
+        <!-- Badges -->
+        <div class="absolute top-2 left-2 flex flex-col gap-1">
+                            <span class="bg-amber-500 text-white text-xs font-medium px-2 py-1 rounded">Featured</span>
+                                        <span class="bg-red-500 text-white text-xs font-medium px-2 py-1 rounded">Sale</span>
+                                </div>
+        
+        <!-- Quick Add to Cart -->
+        <div class="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <button data-add-to-cart="29" 
+                    class="w-full bg-amber-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-amber-700 transition">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+    
+    <!-- Product Info -->
+    <div class="p-4">
+        <div class="flex items-start justify-between mb-2">
+            <div>
+                                    <p class="text-xs text-gray-500 uppercase tracking-wide">Tudor</p>
+                                <h3 class="font-semibold text-gray-900 line-clamp-1 mt-1">
+                    <a href="http://127.0.0.1:8000/products/tudor-agm-professional" class="hover:text-amber-600 transition">
+                        Tudor AGM Professional
+                    </a>
+                </h3>
+            </div>
+                    </div>
+        
+        <!-- Key Specs -->
+        <div class="flex flex-wrap gap-2 mb-3 text-xs text-gray-500">
+                                                                                                        </div>
+        
+        <!-- Price & Action -->
+        <div class="flex items-center justify-between">
+            <div>
+                                    <span class="text-2xl font-bold text-amber-600">$209.99</span>
+                    <span class="text-gray-400 line-through text-sm ml-2">$229.99</span>
+                            </div>
+            <a href="http://127.0.0.1:8000/products/tudor-agm-professional" class="text-sm text-amber-600 hover:text-amber-700 font-medium">
+                View Details →
+            </a>
+        </div>
+    </div>
+</div>                                            <div class="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl hover:border-amber-200 transition-all duration-300">
+    <!-- Product Image -->
+    <div class="relative aspect-square bg-gray-50 overflow-hidden">
+                    <img src="http://127.0.0.1:8000/storage/products/yuasa-agm.jpg" 
+                 alt="Yuasa AGM 70Ah" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                
+        <!-- Badges -->
+        <div class="absolute top-2 left-2 flex flex-col gap-1">
+                            <span class="bg-amber-500 text-white text-xs font-medium px-2 py-1 rounded">Featured</span>
+                                        <span class="bg-red-500 text-white text-xs font-medium px-2 py-1 rounded">Sale</span>
+                                </div>
+        
+        <!-- Quick Add to Cart -->
+        <div class="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <button data-add-to-cart="35" 
+                    class="w-full bg-amber-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-amber-700 transition">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+    
+    <!-- Product Info -->
+    <div class="p-4">
+        <div class="flex items-start justify-between mb-2">
+            <div>
+                                    <p class="text-xs text-gray-500 uppercase tracking-wide">Yuasa</p>
+                                <h3 class="font-semibold text-gray-900 line-clamp-1 mt-1">
+                    <a href="http://127.0.0.1:8000/products/yuasa-agm-70" class="hover:text-amber-600 transition">
+                        Yuasa AGM 70Ah
+                    </a>
+                </h3>
+            </div>
+                    </div>
+        
+        <!-- Key Specs -->
+        <div class="flex flex-wrap gap-2 mb-3 text-xs text-gray-500">
+                                                                                                        </div>
+        
+        <!-- Price & Action -->
+        <div class="flex items-center justify-between">
+            <div>
+                                    <span class="text-2xl font-bold text-amber-600">$239.99</span>
+                    <span class="text-gray-400 line-through text-sm ml-2">$259.99</span>
+                            </div>
+            <a href="http://127.0.0.1:8000/products/yuasa-agm-70" class="text-sm text-amber-600 hover:text-amber-700 font-medium">
+                View Details →
+            </a>
+        </div>
+    </div>
+</div>                                            <div class="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl hover:border-amber-200 transition-all duration-300">
+    <!-- Product Image -->
+    <div class="relative aspect-square bg-gray-50 overflow-hidden">
+                    <img src="http://127.0.0.1:8000/storage/products/bosch-s4-001.jpg" 
+                 alt="Bosch S4 001 Silver Battery" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                
+        <!-- Badges -->
+        <div class="absolute top-2 left-2 flex flex-col gap-1">
+                            <span class="bg-amber-500 text-white text-xs font-medium px-2 py-1 rounded">Featured</span>
+                                        <span class="bg-red-500 text-white text-xs font-medium px-2 py-1 rounded">Sale</span>
+                                </div>
+        
+        <!-- Quick Add to Cart -->
+        <div class="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <button data-add-to-cart="1" 
+                    class="w-full bg-amber-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-amber-700 transition">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+    
+    <!-- Product Info -->
+    <div class="p-4">
+        <div class="flex items-start justify-between mb-2">
+            <div>
+                                    <p class="text-xs text-gray-500 uppercase tracking-wide">Bosch</p>
+                                <h3 class="font-semibold text-gray-900 line-clamp-1 mt-1">
+                    <a href="http://127.0.0.1:8000/products/bosch-s4-001-silver" class="hover:text-amber-600 transition">
+                        Bosch S4 001 Silver Battery
+                    </a>
+                </h3>
+            </div>
+                    </div>
+        
+        <!-- Key Specs -->
+        <div class="flex flex-wrap gap-2 mb-3 text-xs text-gray-500">
+                                                                                                        </div>
+        
+        <!-- Price & Action -->
+        <div class="flex items-center justify-between">
+            <div>
+                                    <span class="text-2xl font-bold text-amber-600">$119.99</span>
+                    <span class="text-gray-400 line-through text-sm ml-2">$129.99</span>
+                            </div>
+            <a href="http://127.0.0.1:8000/products/bosch-s4-001-silver" class="text-sm text-amber-600 hover:text-amber-700 font-medium">
+                View Details →
+            </a>
+        </div>
+    </div>
+</div>                                    </div>
+                    </div>
+    </section>
+    
+    
+        <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between mb-10">
+                <h2 class="text-3xl font-bold text-gray-900">Trusted Brands</h2>
+                <a href="http://127.0.0.1:8000/brands" class="text-amber-600 hover:text-amber-700 font-medium">Види Сите →</a>
+            </div>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-4">
+                                    <a href="http://127.0.0.1:8000/brands/bosch" class="group flex flex-col items-center p-6 bg-white rounded-xl border border-gray-200 hover:border-amber-300 hover:shadow-lg transition">
+                                                    <img src="http://127.0.0.1:8000/storage/brands/bosch.png" alt="Bosch" class="h-16 w-auto object-contain mb-3 group-hover:scale-105 transition-transform">
+                                                <span class="text-gray-700 font-medium text-center">Bosch</span>
+                    </a>
+                                    <a href="http://127.0.0.1:8000/brands/varta" class="group flex flex-col items-center p-6 bg-white rounded-xl border border-gray-200 hover:border-amber-300 hover:shadow-lg transition">
+                                                    <img src="http://127.0.0.1:8000/storage/brands/varta.png" alt="Varta" class="h-16 w-auto object-contain mb-3 group-hover:scale-105 transition-transform">
+                                                <span class="text-gray-700 font-medium text-center">Varta</span>
+                    </a>
+                                    <a href="http://127.0.0.1:8000/brands/exide" class="group flex flex-col items-center p-6 bg-white rounded-xl border border-gray-200 hover:border-amber-300 hover:shadow-lg transition">
+                                                    <img src="http://127.0.0.1:8000/storage/brands/exide.png" alt="Exide" class="h-16 w-auto object-contain mb-3 group-hover:scale-105 transition-transform">
+                                                <span class="text-gray-700 font-medium text-center">Exide</span>
+                    </a>
+                                    <a href="http://127.0.0.1:8000/brands/banner" class="group flex flex-col items-center p-6 bg-white rounded-xl border border-gray-200 hover:border-amber-300 hover:shadow-lg transition">
+                                                    <img src="http://127.0.0.1:8000/storage/brands/banner.png" alt="Banner" class="h-16 w-auto object-contain mb-3 group-hover:scale-105 transition-transform">
+                                                <span class="text-gray-700 font-medium text-center">Banner</span>
+                    </a>
+                                    <a href="http://127.0.0.1:8000/brands/moll" class="group flex flex-col items-center p-6 bg-white rounded-xl border border-gray-200 hover:border-amber-300 hover:shadow-lg transition">
+                                                    <img src="http://127.0.0.1:8000/storage/brands/moll.png" alt="Moll" class="h-16 w-auto object-contain mb-3 group-hover:scale-105 transition-transform">
+                                                <span class="text-gray-700 font-medium text-center">Moll</span>
+                    </a>
+                                    <a href="http://127.0.0.1:8000/brands/tudor" class="group flex flex-col items-center p-6 bg-white rounded-xl border border-gray-200 hover:border-amber-300 hover:shadow-lg transition">
+                                                    <img src="http://127.0.0.1:8000/storage/brands/tudor.png" alt="Tudor" class="h-16 w-auto object-contain mb-3 group-hover:scale-105 transition-transform">
+                                                <span class="text-gray-700 font-medium text-center">Tudor</span>
+                    </a>
+                                    <a href="http://127.0.0.1:8000/brands/centra" class="group flex flex-col items-center p-6 bg-white rounded-xl border border-gray-200 hover:border-amber-300 hover:shadow-lg transition">
+                                                    <img src="http://127.0.0.1:8000/storage/brands/centra.png" alt="Centra" class="h-16 w-auto object-contain mb-3 group-hover:scale-105 transition-transform">
+                                                <span class="text-gray-700 font-medium text-center">Centra</span>
+                    </a>
+                                    <a href="http://127.0.0.1:8000/brands/fiamm" class="group flex flex-col items-center p-6 bg-white rounded-xl border border-gray-200 hover:border-amber-300 hover:shadow-lg transition">
+                                                    <img src="http://127.0.0.1:8000/storage/brands/fiamm.png" alt="Fiamm" class="h-16 w-auto object-contain mb-3 group-hover:scale-105 transition-transform">
+                                                <span class="text-gray-700 font-medium text-center">Fiamm</span>
+                    </a>
+                            </div>
+        </div>
+    </section>
+    
+    
+        <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between mb-10">
+                <h2 class="text-3xl font-bold text-gray-900">New Arrivals</h2>
+                <a href="http://127.0.0.1:8000/products?sort=newest" class="text-amber-600 hover:text-amber-700 font-medium">Види Сите →</a>
+            </div>
+            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                                            <div class="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl hover:border-amber-200 transition-all duration-300">
+    <!-- Product Image -->
+    <div class="relative aspect-square bg-gray-50 overflow-hidden">
+                    <img src="http://127.0.0.1:8000/storage/products/acdelco-gold-48agm.jpg" 
+                 alt="ACDelco Gold 48AGM" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                
+        <!-- Badges -->
+        <div class="absolute top-2 left-2 flex flex-col gap-1">
+                                        <span class="bg-red-500 text-white text-xs font-medium px-2 py-1 rounded">Sale</span>
+                                </div>
+        
+        <!-- Quick Add to Cart -->
+        <div class="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <button data-add-to-cart="13" 
+                    class="w-full bg-amber-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-amber-700 transition">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+    
+    <!-- Product Info -->
+    <div class="p-4">
+        <div class="flex items-start justify-between mb-2">
+            <div>
+                                    <p class="text-xs text-gray-500 uppercase tracking-wide">ACDelco</p>
+                                <h3 class="font-semibold text-gray-900 line-clamp-1 mt-1">
+                    <a href="http://127.0.0.1:8000/products/acdelco-gold-48agm" class="hover:text-amber-600 transition">
+                        ACDelco Gold 48AGM
+                    </a>
+                </h3>
+            </div>
+                    </div>
+        
+        <!-- Key Specs -->
+        <div class="flex flex-wrap gap-2 mb-3 text-xs text-gray-500">
+                                                                                                        </div>
+        
+        <!-- Price & Action -->
+        <div class="flex items-center justify-between">
+            <div>
+                                    <span class="text-2xl font-bold text-amber-600">$219.99</span>
+                    <span class="text-gray-400 line-through text-sm ml-2">$239.99</span>
+                            </div>
+            <a href="http://127.0.0.1:8000/products/acdelco-gold-48agm" class="text-sm text-amber-600 hover:text-amber-700 font-medium">
+                View Details →
+            </a>
+        </div>
+    </div>
+</div>                                            <div class="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl hover:border-amber-200 transition-all duration-300">
+    <!-- Product Image -->
+    <div class="relative aspect-square bg-gray-50 overflow-hidden">
+                    <img src="http://127.0.0.1:8000/storage/products/acdelco-silver-65agm.jpg" 
+                 alt="ACDelco Silver 65AGM" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                
+        <!-- Badges -->
+        <div class="absolute top-2 left-2 flex flex-col gap-1">
+                                        <span class="bg-red-500 text-white text-xs font-medium px-2 py-1 rounded">Sale</span>
+                                </div>
+        
+        <!-- Quick Add to Cart -->
+        <div class="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <button data-add-to-cart="14" 
+                    class="w-full bg-amber-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-amber-700 transition">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+    
+    <!-- Product Info -->
+    <div class="p-4">
+        <div class="flex items-start justify-between mb-2">
+            <div>
+                                    <p class="text-xs text-gray-500 uppercase tracking-wide">ACDelco</p>
+                                <h3 class="font-semibold text-gray-900 line-clamp-1 mt-1">
+                    <a href="http://127.0.0.1:8000/products/acdelco-silver-65agm" class="hover:text-amber-600 transition">
+                        ACDelco Silver 65AGM
+                    </a>
+                </h3>
+            </div>
+                    </div>
+        
+        <!-- Key Specs -->
+        <div class="flex flex-wrap gap-2 mb-3 text-xs text-gray-500">
+                                                                                                        </div>
+        
+        <!-- Price & Action -->
+        <div class="flex items-center justify-between">
+            <div>
+                                    <span class="text-2xl font-bold text-amber-600">$169.99</span>
+                    <span class="text-gray-400 line-through text-sm ml-2">$189.99</span>
+                            </div>
+            <a href="http://127.0.0.1:8000/products/acdelco-silver-65agm" class="text-sm text-amber-600 hover:text-amber-700 font-medium">
+                View Details →
+            </a>
+        </div>
+    </div>
+</div>                                            <div class="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl hover:border-amber-200 transition-all duration-300">
+    <!-- Product Image -->
+    <div class="relative aspect-square bg-gray-50 overflow-hidden">
+                    <img src="http://127.0.0.1:8000/storage/products/diehard-gold-35.jpg" 
+                 alt="DieHard Gold 35" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                
+        <!-- Badges -->
+        <div class="absolute top-2 left-2 flex flex-col gap-1">
+                                        <span class="bg-red-500 text-white text-xs font-medium px-2 py-1 rounded">Sale</span>
+                                </div>
+        
+        <!-- Quick Add to Cart -->
+        <div class="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <button data-add-to-cart="15" 
+                    class="w-full bg-amber-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-amber-700 transition">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+    
+    <!-- Product Info -->
+    <div class="p-4">
+        <div class="flex items-start justify-between mb-2">
+            <div>
+                                    <p class="text-xs text-gray-500 uppercase tracking-wide">DieHard</p>
+                                <h3 class="font-semibold text-gray-900 line-clamp-1 mt-1">
+                    <a href="http://127.0.0.1:8000/products/diehard-gold-35" class="hover:text-amber-600 transition">
+                        DieHard Gold 35
+                    </a>
+                </h3>
+            </div>
+                    </div>
+        
+        <!-- Key Specs -->
+        <div class="flex flex-wrap gap-2 mb-3 text-xs text-gray-500">
+                                                                                                        </div>
+        
+        <!-- Price & Action -->
+        <div class="flex items-center justify-between">
+            <div>
+                                    <span class="text-2xl font-bold text-amber-600">$134.99</span>
+                    <span class="text-gray-400 line-through text-sm ml-2">$149.99</span>
+                            </div>
+            <a href="http://127.0.0.1:8000/products/diehard-gold-35" class="text-sm text-amber-600 hover:text-amber-700 font-medium">
+                View Details →
+            </a>
+        </div>
+    </div>
+</div>                                            <div class="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl hover:border-amber-200 transition-all duration-300">
+    <!-- Product Image -->
+    <div class="relative aspect-square bg-gray-50 overflow-hidden">
+                    <img src="http://127.0.0.1:8000/storage/products/interstate-mt-34.jpg" 
+                 alt="Interstate MT-34" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                
+        <!-- Badges -->
+        <div class="absolute top-2 left-2 flex flex-col gap-1">
+                                        <span class="bg-red-500 text-white text-xs font-medium px-2 py-1 rounded">Sale</span>
+                                </div>
+        
+        <!-- Quick Add to Cart -->
+        <div class="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <button data-add-to-cart="17" 
+                    class="w-full bg-amber-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-amber-700 transition">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+    
+    <!-- Product Info -->
+    <div class="p-4">
+        <div class="flex items-start justify-between mb-2">
+            <div>
+                                    <p class="text-xs text-gray-500 uppercase tracking-wide">Interstate</p>
+                                <h3 class="font-semibold text-gray-900 line-clamp-1 mt-1">
+                    <a href="http://127.0.0.1:8000/products/interstate-mt-34" class="hover:text-amber-600 transition">
+                        Interstate MT-34
+                    </a>
+                </h3>
+            </div>
+                    </div>
+        
+        <!-- Key Specs -->
+        <div class="flex flex-wrap gap-2 mb-3 text-xs text-gray-500">
+                                                                                                        </div>
+        
+        <!-- Price & Action -->
+        <div class="flex items-center justify-between">
+            <div>
+                                    <span class="text-2xl font-bold text-amber-600">$124.99</span>
+                    <span class="text-gray-400 line-through text-sm ml-2">$139.99</span>
+                            </div>
+            <a href="http://127.0.0.1:8000/products/interstate-mt-34" class="text-sm text-amber-600 hover:text-amber-700 font-medium">
+                View Details →
+            </a>
+        </div>
+    </div>
+</div>                                            <div class="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl hover:border-amber-200 transition-all duration-300">
+    <!-- Product Image -->
+    <div class="relative aspect-square bg-gray-50 overflow-hidden">
+                    <img src="http://127.0.0.1:8000/storage/products/interstate-srm-27.jpg" 
+                 alt="Interstate SRM-27" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                
+        <!-- Badges -->
+        <div class="absolute top-2 left-2 flex flex-col gap-1">
+                                        <span class="bg-red-500 text-white text-xs font-medium px-2 py-1 rounded">Sale</span>
+                                </div>
+        
+        <!-- Quick Add to Cart -->
+        <div class="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <button data-add-to-cart="18" 
+                    class="w-full bg-amber-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-amber-700 transition">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+    
+    <!-- Product Info -->
+    <div class="p-4">
+        <div class="flex items-start justify-between mb-2">
+            <div>
+                                    <p class="text-xs text-gray-500 uppercase tracking-wide">Interstate</p>
+                                <h3 class="font-semibold text-gray-900 line-clamp-1 mt-1">
+                    <a href="http://127.0.0.1:8000/products/interstate-srm-27" class="hover:text-amber-600 transition">
+                        Interstate SRM-27
+                    </a>
+                </h3>
+            </div>
+                    </div>
+        
+        <!-- Key Specs -->
+        <div class="flex flex-wrap gap-2 mb-3 text-xs text-gray-500">
+                                                                                                        </div>
+        
+        <!-- Price & Action -->
+        <div class="flex items-center justify-between">
+            <div>
+                                    <span class="text-2xl font-bold text-amber-600">$159.99</span>
+                    <span class="text-gray-400 line-through text-sm ml-2">$179.99</span>
+                            </div>
+            <a href="http://127.0.0.1:8000/products/interstate-srm-27" class="text-sm text-amber-600 hover:text-amber-700 font-medium">
+                View Details →
+            </a>
+        </div>
+    </div>
+</div>                                            <div class="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl hover:border-amber-200 transition-all duration-300">
+    <!-- Product Image -->
+    <div class="relative aspect-square bg-gray-50 overflow-hidden">
+                    <img src="http://127.0.0.1:8000/storage/products/interstate-31-mhd.jpg" 
+                 alt="Interstate 31-MHD" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                
+        <!-- Badges -->
+        <div class="absolute top-2 left-2 flex flex-col gap-1">
+                                        <span class="bg-red-500 text-white text-xs font-medium px-2 py-1 rounded">Sale</span>
+                                </div>
+        
+        <!-- Quick Add to Cart -->
+        <div class="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <button data-add-to-cart="19" 
+                    class="w-full bg-amber-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-amber-700 transition">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+    
+    <!-- Product Info -->
+    <div class="p-4">
+        <div class="flex items-start justify-between mb-2">
+            <div>
+                                    <p class="text-xs text-gray-500 uppercase tracking-wide">Interstate</p>
+                                <h3 class="font-semibold text-gray-900 line-clamp-1 mt-1">
+                    <a href="http://127.0.0.1:8000/products/interstate-31-mhd" class="hover:text-amber-600 transition">
+                        Interstate 31-MHD
+                    </a>
+                </h3>
+            </div>
+                    </div>
+        
+        <!-- Key Specs -->
+        <div class="flex flex-wrap gap-2 mb-3 text-xs text-gray-500">
+                                                                                                        </div>
+        
+        <!-- Price & Action -->
+        <div class="flex items-center justify-between">
+            <div>
+                                    <span class="text-2xl font-bold text-amber-600">$279.99</span>
+                    <span class="text-gray-400 line-through text-sm ml-2">$299.99</span>
+                            </div>
+            <a href="http://127.0.0.1:8000/products/interstate-31-mhd" class="text-sm text-amber-600 hover:text-amber-700 font-medium">
+                View Details →
+            </a>
+        </div>
+    </div>
+</div>                                            <div class="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl hover:border-amber-200 transition-all duration-300">
+    <!-- Product Image -->
+    <div class="relative aspect-square bg-gray-50 overflow-hidden">
+                    <img src="http://127.0.0.1:8000/storage/products/varta-marine-agm.jpg" 
+                 alt="Varta Marine AGM 105Ah" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                
+        <!-- Badges -->
+        <div class="absolute top-2 left-2 flex flex-col gap-1">
+                                        <span class="bg-red-500 text-white text-xs font-medium px-2 py-1 rounded">Sale</span>
+                                </div>
+        
+        <!-- Quick Add to Cart -->
+        <div class="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <button data-add-to-cart="20" 
+                    class="w-full bg-amber-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-amber-700 transition">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+    
+    <!-- Product Info -->
+    <div class="p-4">
+        <div class="flex items-start justify-between mb-2">
+            <div>
+                                    <p class="text-xs text-gray-500 uppercase tracking-wide">Varta</p>
+                                <h3 class="font-semibold text-gray-900 line-clamp-1 mt-1">
+                    <a href="http://127.0.0.1:8000/products/varta-marine-agm-105" class="hover:text-amber-600 transition">
+                        Varta Marine AGM 105Ah
+                    </a>
+                </h3>
+            </div>
+                    </div>
+        
+        <!-- Key Specs -->
+        <div class="flex flex-wrap gap-2 mb-3 text-xs text-gray-500">
+                                                                                                        </div>
+        
+        <!-- Price & Action -->
+        <div class="flex items-center justify-between">
+            <div>
+                                    <span class="text-2xl font-bold text-amber-600">$269.99</span>
+                    <span class="text-gray-400 line-through text-sm ml-2">$289.99</span>
+                            </div>
+            <a href="http://127.0.0.1:8000/products/varta-marine-agm-105" class="text-sm text-amber-600 hover:text-amber-700 font-medium">
+                View Details →
+            </a>
+        </div>
+    </div>
+</div>                                            <div class="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl hover:border-amber-200 transition-all duration-300">
+    <!-- Product Image -->
+    <div class="relative aspect-square bg-gray-50 overflow-hidden">
+                    <img src="http://127.0.0.1:8000/storage/products/banner-starting-bull.jpg" 
+                 alt="Banner Starting Bull 48Ah" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                
+        <!-- Badges -->
+        <div class="absolute top-2 left-2 flex flex-col gap-1">
+                                        <span class="bg-red-500 text-white text-xs font-medium px-2 py-1 rounded">Sale</span>
+                                </div>
+        
+        <!-- Quick Add to Cart -->
+        <div class="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <button data-add-to-cart="22" 
+                    class="w-full bg-amber-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-amber-700 transition">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+    
+    <!-- Product Info -->
+    <div class="p-4">
+        <div class="flex items-start justify-between mb-2">
+            <div>
+                                    <p class="text-xs text-gray-500 uppercase tracking-wide">Banner</p>
+                                <h3 class="font-semibold text-gray-900 line-clamp-1 mt-1">
+                    <a href="http://127.0.0.1:8000/products/banner-starting-bull-48" class="hover:text-amber-600 transition">
+                        Banner Starting Bull 48Ah
+                    </a>
+                </h3>
+            </div>
+                    </div>
+        
+        <!-- Key Specs -->
+        <div class="flex flex-wrap gap-2 mb-3 text-xs text-gray-500">
+                                                                                                        </div>
+        
+        <!-- Price & Action -->
+        <div class="flex items-center justify-between">
+            <div>
+                                    <span class="text-2xl font-bold text-amber-600">$99.99</span>
+                    <span class="text-gray-400 line-through text-sm ml-2">$109.99</span>
+                            </div>
+            <a href="http://127.0.0.1:8000/products/banner-starting-bull-48" class="text-sm text-amber-600 hover:text-amber-700 font-medium">
+                View Details →
+            </a>
+        </div>
+    </div>
+</div>                                    </div>
+                    </div>
+    </section>
+        </main>
+        
+        <footer class="bg-gray-900 text-gray-400 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Company Info -->
+            <div>
+                <a href="http://127.0.0.1:8000" class="flex items-center">
+                    <svg class="h-8 w-8 text-amber-400" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M14.4 3.6L12 6l-2.4-2.4C8.4 2.4 7.2 3.6 7.2 4.8v14.4c0 1.2 1.2 2.4 2.4 2.4h9.6c1.2 0 2.4-1.2 2.4-2.4V4.8c0-1.2-1.2-2.4-2.4-2.4zM10 5.2h4v1.6h-4V5.2zm0 3.2h4v8h-4v-8zm4.8 0h4v8h-4v-8z"/>
+                    </svg>
+                    <span class="ml-2 text-xl font-bold text-white">Laravel</span>
+                </a>
+                <p class="mt-4 text-sm">Premium batteries for every vehicle. Fast shipping, expert advice, and the best warranty in the industry.</p>
+            </div>
+            
+            <!-- Shop Links -->
+            <div>
+                <h3 class="text-white font-semibold mb-4">Shop</h3>
+                <nav class="space-y-2 text-sm" x-data="menuNavigation()">
+        <ul class="flex flex-col gap-2" role="list">
+                            <li class="relative" role="none" >
+            
+        <a 
+            href="/products"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                        <span>All Batteries</span>
+        </a>
+    </li>                            <li class="relative" role="none" >
+            
+        <a 
+            href="/categories"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                        <span>Categories</span>
+        </a>
+    </li>                            <li class="relative" role="none" >
+            
+        <a 
+            href="/brands"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                        <span>Brands</span>
+        </a>
+    </li>                            <li class="relative" role="none" >
+            
+        <a 
+            href="/battery-finder"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                        <span>Battery Finder</span>
+        </a>
+    </li>                            <li class="relative" role="none" >
+            
+        <a 
+            href="/products?sort=newest"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                        <span>New Arrivals</span>
+        </a>
+    </li>                            <li class="relative" role="none" >
+            
+        <a 
+            href="/products?sort=best-sellers"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                        <span>Best Sellers</span>
+        </a>
+    </li>                    </ul>
+    </nav>
+
+            </div>
+            
+            <!-- Help Links -->
+            <div>
+                <h3 class="text-white font-semibold mb-4">Help</h3>
+                <nav class="space-y-2 text-sm" x-data="menuNavigation()">
+        <ul class="flex flex-col gap-2" role="list">
+                            <li class="relative" role="none" >
+            
+        <a 
+            href="/contact"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                        <span>Contact Us</span>
+        </a>
+    </li>                            <li class="relative" role="none" >
+            
+        <a 
+            href="/shipping"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                        <span>Shipping Info</span>
+        </a>
+    </li>                            <li class="relative" role="none" >
+            
+        <a 
+            href="/returns"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                        <span>Returns &amp; Exchanges</span>
+        </a>
+    </li>                            <li class="relative" role="none" >
+            
+        <a 
+            href="/warranty"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                        <span>Warranty Info</span>
+        </a>
+    </li>                            <li class="relative" role="none" >
+            
+        <a 
+            href="/faq"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                        <span>FAQ</span>
+        </a>
+    </li>                            <li class="relative" role="none" >
+            
+        <a 
+            href="/installation-guide"
+            target="_self"
+            role="menuitem"
+            class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-100 rounded-lg transition-colors "
+                    >
+                        <span>Installation Guide</span>
+        </a>
+    </li>                    </ul>
+    </nav>
+
+            </div>
+            
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-white font-semibold mb-4">Contact</h3>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <span>hello@batteryshop.com</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        <span>1-800-BATTERY</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        <span>123 Battery St, Power City, PC 12345</span>
+                    </li>
+                </ul>
+                
+                <!-- Social -->
+                <div class="mt-6 flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-amber-400 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-amber-400 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-amber-400 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C5.374 0 0 5.373 0 12c0 3.203.013 3.583.07 4.85-.149 3.227-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.203 0-3.583-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92C5.374.013 5.754 0 8.955 0h3.045z"/></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-amber-400 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.302 3.438 9.8 8.207 11.387.6.111.82-.26.82-.577 0-2.85-.012-5.15-.012-5.15C6.207 14.8 5.12 12.5 5.12 12.5c-.69-1.17-.03-1.2-.03-1.2.81-.04 1.5.7 1.5.7.89 1.2 2.3 1.2 2.9 1.2 1.8 1.9 4.6 1.2 5.7.9.18-.7.7-1.2 1.2-1.5-4.3-.5-8.8-2.2-8.8-9.7 0-2.2.8-4 2.1-5.4-.2-.5-.9-2.5.2-5.2 0 0 1.7-.5 5.7 2.1 1.6-.5 3.5-.7 5.3-.7 1.9 0 3.7.3 5.3.7 3.9-2.6 5.7-2.1 5.7-2.1 1.1 2.7.4 4.7.2 5.2 1.4 1.4 2.1 3.2 2.1 5.4 0 7.5-4.6 9.2-8.9 9.7.7.6 1.3 1.8 1.3 3.6 0 2.6-.012 4.7-.012 5.4 0 .3.2.7.8.6 4.8-1.6 8.2-6.1 8.2-11.4C24 5.373 18.627 0 12 0z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+            <p>&copy; 2026 Laravel. All rights reserved.</p>
+        </div>
+    </div>
+</footer>    </div>
+    
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.store('menu', {
+            openDropdowns: [],
+            
+            toggleDropdown(index) {
+                if (this.openDropdowns.includes(index)) {
+                    this.openDropdowns = this.openDropdowns.filter(i => i !== index);
+                } else {
+                    this.openDropdowns = [...this.openDropdowns, index];
+                }
+            },
+            
+            closeDropdown(index) {
+                this.openDropdowns = this.openDropdowns.filter(i => i !== index);
+            },
+            
+            closeAllDropdowns() {
+                this.openDropdowns = [];
+            },
+        });
+    });
+
+    function menuNavigation() {
+        return {
+            init() {
+                this.$watch('$store.menu.openDropdowns', (value) => {
+                    // React to store changes if needed
+                });
+            },
+            
+            '@toggle-dropdown.window'({ detail }) {
+                $store.menu.toggleDropdown(detail.index);
+            },
+            
+            '@close-dropdown.window'({ detail }) {
+                $store.menu.closeDropdown(detail.index);
+            },
+            
+            '@keydown-dropdown.window'({ detail }) {
+                if (detail.event.key === 'Escape') {
+                    $store.menu.closeDropdown(detail.index);
+                } else if (detail.event.key === 'Enter' || detail.event.key === ' ') {
+                    detail.event.preventDefault();
+                    $store.menu.toggleDropdown(detail.index);
+                } else if (detail.event.key === 'ArrowDown' && $store.menu.openDropdowns.includes(detail.index)) {
+                    detail.event.preventDefault();
+                    const dropdown = document.getElementById(detail.id);
+                    if (dropdown) {
+                        const firstLink = dropdown.querySelector('a, button');
+                        if (firstLink) firstLink.focus();
+                    }
+                }
+            },
+            
+            closeAllDropdowns() {
+                $store.menu.closeAllDropdowns();
+            },
+        }
+    }
+
+    // Close dropdowns on click outside
+    document.addEventListener('click', function(event) {
+        const navs = document.querySelectorAll('[x-data="menuNavigation()"]');
+        navs.forEach(nav => {
+            const alpine = nav.__x;
+            if (alpine && !nav.contains(event.target)) {
+                alpine.closeAllDropdowns();
+            }
+        });
+    });
+
+    // Close dropdowns on escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            const navs = document.querySelectorAll('[x-data="menuNavigation()"]');
+            navs.forEach(nav => {
+                const alpine = nav.__x;
+                if (alpine) {
+                    alpine.closeAllDropdowns();
+                }
+            });
+        }
+    });
+</script>
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.store('menu', {
+            openDropdowns: [],
+            
+            toggleDropdown(index) {
+                if (this.openDropdowns.includes(index)) {
+                    this.openDropdowns = this.openDropdowns.filter(i => i !== index);
+                } else {
+                    this.openDropdowns = [...this.openDropdowns, index];
+                }
+            },
+            
+            closeDropdown(index) {
+                this.openDropdowns = this.openDropdowns.filter(i => i !== index);
+            },
+            
+            closeAllDropdowns() {
+                this.openDropdowns = [];
+            },
+        });
+    });
+
+    function menuNavigation() {
+        return {
+            init() {
+                this.$watch('$store.menu.openDropdowns', (value) => {
+                    // React to store changes if needed
+                });
+            },
+            
+            '@toggle-dropdown.window'({ detail }) {
+                $store.menu.toggleDropdown(detail.index);
+            },
+            
+            '@close-dropdown.window'({ detail }) {
+                $store.menu.closeDropdown(detail.index);
+            },
+            
+            '@keydown-dropdown.window'({ detail }) {
+                if (detail.event.key === 'Escape') {
+                    $store.menu.closeDropdown(detail.index);
+                } else if (detail.event.key === 'Enter' || detail.event.key === ' ') {
+                    detail.event.preventDefault();
+                    $store.menu.toggleDropdown(detail.index);
+                } else if (detail.event.key === 'ArrowDown' && $store.menu.openDropdowns.includes(detail.index)) {
+                    detail.event.preventDefault();
+                    const dropdown = document.getElementById(detail.id);
+                    if (dropdown) {
+                        const firstLink = dropdown.querySelector('a, button');
+                        if (firstLink) firstLink.focus();
+                    }
+                }
+            },
+            
+            closeAllDropdowns() {
+                $store.menu.closeAllDropdowns();
+            },
+        }
+    }
+
+    // Close dropdowns on click outside
+    document.addEventListener('click', function(event) {
+        const navs = document.querySelectorAll('[x-data="menuNavigation()"]');
+        navs.forEach(nav => {
+            const alpine = nav.__x;
+            if (alpine && !nav.contains(event.target)) {
+                alpine.closeAllDropdowns();
+            }
+        });
+    });
+
+    // Close dropdowns on escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            const navs = document.querySelectorAll('[x-data="menuNavigation()"]');
+            navs.forEach(nav => {
+                const alpine = nav.__x;
+                if (alpine) {
+                    alpine.closeAllDropdowns();
+                }
+            });
+        }
+    });
+</script>
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.store('menu', {
+            openDropdowns: [],
+            
+            toggleDropdown(index) {
+                if (this.openDropdowns.includes(index)) {
+                    this.openDropdowns = this.openDropdowns.filter(i => i !== index);
+                } else {
+                    this.openDropdowns = [...this.openDropdowns, index];
+                }
+            },
+            
+            closeDropdown(index) {
+                this.openDropdowns = this.openDropdowns.filter(i => i !== index);
+            },
+            
+            closeAllDropdowns() {
+                this.openDropdowns = [];
+            },
+        });
+    });
+
+    function menuNavigation() {
+        return {
+            init() {
+                this.$watch('$store.menu.openDropdowns', (value) => {
+                    // React to store changes if needed
+                });
+            },
+            
+            '@toggle-dropdown.window'({ detail }) {
+                $store.menu.toggleDropdown(detail.index);
+            },
+            
+            '@close-dropdown.window'({ detail }) {
+                $store.menu.closeDropdown(detail.index);
+            },
+            
+            '@keydown-dropdown.window'({ detail }) {
+                if (detail.event.key === 'Escape') {
+                    $store.menu.closeDropdown(detail.index);
+                } else if (detail.event.key === 'Enter' || detail.event.key === ' ') {
+                    detail.event.preventDefault();
+                    $store.menu.toggleDropdown(detail.index);
+                } else if (detail.event.key === 'ArrowDown' && $store.menu.openDropdowns.includes(detail.index)) {
+                    detail.event.preventDefault();
+                    const dropdown = document.getElementById(detail.id);
+                    if (dropdown) {
+                        const firstLink = dropdown.querySelector('a, button');
+                        if (firstLink) firstLink.focus();
+                    }
+                }
+            },
+            
+            closeAllDropdowns() {
+                $store.menu.closeAllDropdowns();
+            },
+        }
+    }
+
+    // Close dropdowns on click outside
+    document.addEventListener('click', function(event) {
+        const navs = document.querySelectorAll('[x-data="menuNavigation()"]');
+        navs.forEach(nav => {
+            const alpine = nav.__x;
+            if (alpine && !nav.contains(event.target)) {
+                alpine.closeAllDropdowns();
+            }
+        });
+    });
+
+    // Close dropdowns on escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            const navs = document.querySelectorAll('[x-data="menuNavigation()"]');
+            navs.forEach(nav => {
+                const alpine = nav.__x;
+                if (alpine) {
+                    alpine.closeAllDropdowns();
+                }
+            });
+        }
+    });
+</script>
+
+    
+</body>
+</html>

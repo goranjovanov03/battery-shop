@@ -1,0 +1,53 @@
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+storage/logs/*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+vendor
+node_modules
+
+# Build
+public/build
+public/hot
+public/storage
+
+# Cache
+bootstrap/cache/*
+!bootstrap/cache/.gitkeep
+
+# Testing
+phpunit.xml
+phpunit.xml.dist
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Documentation
+README.md
+*.md
+
+# Misc
+*.orig
+*.bak
+*.tmp

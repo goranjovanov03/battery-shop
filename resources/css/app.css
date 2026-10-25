@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source "../**/*.blade.php";
+@source "../**/*.js";
+@source "../**/*.jsx";
+
+@theme {
+    --color-brand-red: #c41e3a;
+    --color-brand-red-dark: #9b172d;
+    --color-brand-red-light: #e83e5c;
+    --color-brand-black: #1a1a1a;
+    --color-brand-white: #ffffff;
+    --color-brand-gray-100: #f5f5f5;
+    --color-brand-gray-200: #e5e5e5;
+    --color-brand-gray-300: #d4d4d4;
+    --color-brand-gray-400: #a3a3a3;
+    --color-brand-gray-500: #737373;
+    --color-brand-gray-600: #525252;
+    --color-brand-gray-700: #404040;
+    --color-brand-gray-800: #262626;
+    --color-brand-gray-900: #171717;
+
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+@import './scss/app.scss';

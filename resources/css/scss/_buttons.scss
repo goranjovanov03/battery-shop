@@ -1,0 +1,46 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.btn {
+    @include btn-primary;
+    
+    &.btn-secondary {
+        @include btn-secondary;
+    }
+    
+    &.btn-outline {
+        @include btn-outline;
+    }
+    
+    &.btn-sm {
+        padding: $spacing-xs $spacing-md;
+        font-size: 0.8125rem;
+    }
+    
+    &.btn-lg {
+        padding: $spacing-md $spacing-xl;
+        font-size: 1rem;
+    }
+    
+    &.btn-block {
+        width: 100%;
+    }
+}
+
+.btn-group {
+    display: inline-flex;
+    
+    .btn:not(:first-child) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    
+    .btn:not(:last-child) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    .btn + .btn {
+        margin-left: -1px;
+    }
+}

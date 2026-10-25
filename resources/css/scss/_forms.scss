@@ -1,0 +1,162 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// Force select option colors for dark/light mode compatibility
+select {
+    background-color: $brand-white !important;
+    color: $gray-900 !important;
+}
+
+select option {
+    background-color: $brand-white !important;
+    color: $gray-900 !important;
+}
+
+select option:hover,
+select option:focus,
+select option:checked {
+    background-color: $brand-red !important;
+    color: $brand-white !important;
+}
+
+// Dark mode support
+@media (prefers-color-scheme: dark) {
+    select {
+        background-color: $gray-800 !important;
+        color: $gray-100 !important;
+        border-color: $gray-600 !important;
+    }
+    select option {
+        background-color: $gray-800 !important;
+        color: $gray-100 !important;
+    }
+    select option:hover,
+    select option:focus,
+    select option:checked {
+        background-color: $brand-red !important;
+        color: $brand-white !important;
+    }
+}
+
+.form-group {
+    margin-bottom: $spacing-md;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: $spacing-xs;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: $gray-700;
+}
+
+.form-input {
+    @include input-base;
+    
+    &.form-input-sm {
+        padding: $spacing-xs $spacing-sm;
+        font-size: 0.8125rem;
+    }
+    
+    &.form-input-lg {
+        padding: $spacing-md $spacing-lg;
+        font-size: 1rem;
+    }
+}
+
+.form-select {
+    @include input-base;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+}
+
+.form-textarea {
+    @include input-base;
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-checkbox,
+.form-radio {
+    width: 1rem;
+    height: 1rem;
+    accent-color: $brand-red;
+    cursor: pointer;
+}
+
+.form-error {
+    margin-top: $spacing-xs;
+    font-size: 0.8125rem;
+    color: #dc2626;
+}
+
+.form-hint {
+    margin-top: $spacing-xs;
+    font-size: 0.8125rem;
+    color: $gray-500;
+}
+
+.input-group {
+    display: flex;
+    
+    .form-input,
+    .form-select {
+        border-radius: 0;
+        &:first-child {
+            border-top-left-radius: $radius-md;
+            border-bottom-left-radius: $radius-md;
+        }
+        &:last-child {
+            border-top-right-radius: $radius-md;
+            border-bottom-right-radius: $radius-md;
+        }
+    }
+    
+    .btn {
+        border-radius: 0;
+        &:first-child {
+            border-top-left-radius: $radius-md;
+            border-bottom-left-radius: $radius-md;
+        }
+        &:last-child {
+            border-top-right-radius: $radius-md;
+            border-bottom-right-radius: $radius-md;
+        }
+    }
+}
+
+.floating-label {
+    position: relative;
+    
+    .form-input,
+    .form-select {
+        padding-top: $spacing-lg;
+        padding-bottom: $spacing-xs;
+    }
+    
+    .form-label {
+        position: absolute;
+        top: 50%;
+        left: $spacing-md;
+        transform: translateY(-50%);
+        font-size: 0.875rem;
+        color: $gray-500;
+        pointer-events: none;
+        transition: all $transition-fast;
+        background: transparent;
+        padding: 0 $spacing-xs;
+    }
+    
+    .form-input:focus + .form-label,
+    .form-input:not(:placeholder-shown) + .form-label,
+    .form-select:focus + .form-label,
+    .form-select:not([value=""]) + .form-label {
+        top: 0;
+        font-size: 0.75rem;
+        color: $brand-red;
+    }
+}
